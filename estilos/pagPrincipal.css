@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Roboto&display=swap');
+
+
+body{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
+    background-color: #0a1a2a;
+    color: antiquewhite;
+
+}
+
+#plantilla{
+
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+}
+
+.buscar {
+    position: relative;
+    padding: 5px;
+    margin-left: 50px;
+}
+
+.buscar input {
+    width: 0;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #222;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    background: #123457;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    margin: 5px;
+}
+
+nav a{
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+    background-color: rgba(107, 124, 112, 0.63);
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #0a141d;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo__img{
+    height: 100px;
+    margin-right: 5px;
+
+
+}
+
+.logo__nombre{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+
+.menu{
+
+    background-color: rgb(28, 32, 21);
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: auto;   
+    font-family: 'Roboto', sans-serif;
+}
+
+.menu_items {
+    display: inline;
+    justify-content: space-between;
+
+}
+
+.menu_items a:hover{
+
+    background-color: rgba(107, 124, 112, 0.63);
+    padding: 10px;
+
+
+}
+
+.menu_font{
+    color: antiquewhite;
+}
+
+.ofertas__ps2{
+
+    width: 100%;
+
+}
+main {
+    width: 960px;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.titulo__ofertas{
+    margin: 40px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.d-block{
+    width: 1200px;
+    height: 628px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.cuadros {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    
+}
+
+.cuadros__cuadro {
+    width: 280px;
+    height: 200px;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    margin-bottom: 80px;
+    border-radius: 12px;
+
+}
+
+.cuadros__cuadros--img{
+    width: 280px;
+    height: 200px;
+
+}
+
+.nombre__precios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nombre__precios--titulo{
+    display: inline;
+    margin-left: -20px;
+
+}
+.nombre__precios--precio{
+    display: inline;
+
+}
+
+.oferta{
+
+    font-size: 1.5em;
+    margin-left: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.pocoDinero{
+    margin-left: -10px;
+}
+
+.oferta--promos{
+    font-size: 1.5em;
+    margin-left: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+.oferta__boton{
+    display: grid;
+    grid-template-columns: 190px 190px 190px 190px 190px 190px;
+    width: 100%;
+    gap: 20px;
+    transition: height 0.3s ;
+
+
+    align-content: center;
+    text-align: center;
+
+
+}
+
+
+
+.btn-neon{
+    position: relative;
+    display: grid;
+
+    padding: 15px 30px;
+    color: rgb(27, 80, 255);
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.btn-neon:hover{
+    background: #f9e3ff;
+    box-shadow: 0 0 10px #f9e3ff, 0 0 40px #f9e3ff, 0 0 80px #f9e3ff;
+    transition-delay: 1s;
+ }
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,#f9e3ff);
+ }
+ .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+ #span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent,#f9e3ff);
+}
+ .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#f9e3ff);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#f9e3ff);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.redes{
+    text-align: center;
+}
+
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+@media  (max-width: 720px){
+    .oferta__boton{
+        grid-template-columns: 1fr;
+        margin-left: -20px;
+    }
+
+    .oferta--promos{
+        margin-right: 100px;
+    }
+
+
+        .pie-pagina .grupo-1{
+            width: 90%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap:30px;
+            padding: 35px 0px;
+        }
+
+        .logo{
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+        .buscar{
+            margin-left: -10px;
+        }
+
+        .menu{
+            flex-direction: column;
+
+        }
+
+        .menu_items{
+            margin: 10px;
+        }
+    }
+
+
+/* ----------------------------------  2do html  --------------------------------------------*/
+
+
+
